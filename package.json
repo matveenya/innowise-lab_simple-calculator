@@ -1,0 +1,38 @@
+{
+  "name": "innowise-lab_simple-calculator",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.31.0",
+    "eslint-plugin-prettier": "^5.5.3",
+    "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+  }
+}
